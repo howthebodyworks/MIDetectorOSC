@@ -1,6 +1,6 @@
 MIDetectorOSC
 =============
-*Last tested on SuperCollider 3.6.5 on Ubuntu 13.04, Requires SC3-plugins installed.*
+*Last tested on SuperCollider 3.6.5 on Ubuntu 13.04, Requires SC3-plugins installed (http://sourceforge.net/projects/sc3-plugins/).*
 
 
 Supercollider extension Quark-wannabe for relaying Music Information via OSC.
