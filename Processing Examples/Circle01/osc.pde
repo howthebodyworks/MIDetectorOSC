@@ -39,7 +39,7 @@ void oscEvent(OscMessage theOscMessage) {
 }
 /* Pluggable functions */
 public void ampResponse(int id, float amp) {
-  this.amp = map(amp, 0, 1, 0, 1.0);
+  this.amp = pow(10,map(amp, 0, 1, 0, 1.0));
   if (printOSCMessage)println("Amp:" + id + " " + amp);
 }
 
@@ -49,7 +49,7 @@ public void onsetResponse(int id) {
 }
 
 public void pitchResponse(int id, float pitch) {
-  freq = map(pitch, 80, 18000, 0, 1.0);
+  freq = map(log(pitch), log(80), log(18000), 0, 1.0);
   if (printOSCMessage)println("Pitch:" + id + " " + pitch);
 }
 
